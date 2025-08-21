@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 10 Luna Captures</title>
+</head>
+<body>
+    <header>
+        <h1>📸 Luna Captures</h1>
+        
+        <nav>
+        <a href="#sobre">Sobre</a></li> | <a href="#galeria">Galeria</a></li> | <a href="#contato">Contato</a></li>
+        </nav>
+    </header>
+    <main>
+    <section id="sobre">
+    <h2>Sobre Luna</h2>
+
+    <p>Fotógrafa há <strong>8 anos</strong> especializada em <em>momentos únicos</em>.</p>
+        <blockquote>
+            <p>"A fotografia captura não apenas o que vemos, mas o que sentimos."</p>
+        </blockquote>
+
+    <section id="galeria">
+    <h2>Galeria</h2>
+    <img src="assets/casamento1.jpeg" alt="casamento 1" width="300" height="200">
+    <img src="assets/casamento2.jpg" alt="casamento 2" width="300" height="200"> 
+    <img src="assets/casamento3.jpg" alt="casamento 3" width="300" height="200">
+    <img src="assets/casamento4.jpeg" alt="casamento 4" width="300" height="200">
+    </section>
+
+    <h2>Serviços</h2>
+    <ul style="list-style-type: disc;">
+        <li><strong>Casamentos</strong> - R$ 1.200</li>
+        <li><strong>Retratos</strong> - R$ 350</li>
+        <li><strong>Eventos</strong> - R$ 600</li>
+    </ul>
+
+    <section id="contato">
+    <h2>Contato</h2>
+    <form action="processar.php" method="post">
+        <fieldset>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="area">Evento:</label>
+        <select name="area" id="area">
+            <option value="">Selecione um evento:</option>
+            <option value="cm">Casamento</option>
+            <option value="as">Aniversário</option>
+            <option value="ft">Formatura</option>
+            <option value="ce">Competições Esportivas</option>
+            <option value="ec">Eventos Culturais</option>
+        </select><br><br>
+
+        <label for="mensagem">Detalhes:</label><br>
+            <textarea name="detalhe" id="detalhe" rows="5"></textarea><br><br>
+
+        <input type="submit" value="Solicitar Orçamento">
+        </fieldset>
+    </form>
+        </section>
+    <footer>
+        <p>&copy; 2025 Luna Captures | <a href="https://mail.google.com/mail/u/0/#inbox?compose=NZVHGCSkmhkslpMFzdzSsSVXgPBGpPXRvNBSBTbGgWdNFhZwpjVCcDtFPwvNCgwWvLQqdV" target="_blank"> luna@exemplo.com</a></p>
+    </footer>
+</body>
+</html>
