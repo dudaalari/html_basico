@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <title>Tabelas Avançadas e Multimídia</title>
     <style>
+        table {
+             width: 50%; /* Largura de 50% da tela*/
+            border-collapse: collapse; /* Remove o espaçamento entre as bordas*/
+            margin-bottom: 20px; /* Espaço inferior para separar da proxima seção*/
 
-        /* Começar digitação (Aqui) */
-  
-    </style>
-</head>
-<body>
+        }
+         th, td {
+            border: 1px solid black;
+            padding: 8px; /* Espaçamento interno*/
+            }
+        th {
+            background-color: #a653a3; /*Cor do seu fundo */
+            color: white;
+        }
+        tfoot {
+            background-color: #ffff99;
+            font-weight: bold; /* |Negrito */
+        }
+        td.num-right {
+            text-align:right; /* Alinha texto a direita*/
+        }
+         </style>
+         </head>
+         <body>
+    
+        
     <h1>Relatório de Vendas</h1>
     
     <!-- TABELA SIMPLIFICADA E MAIS COMPACTA -->
@@ -54,15 +74,28 @@
     <!-- Continuar digitação (Aqui) -->
 
     <!-- MULTIMÍDIA EM HTML5 -->
-
+     <h2> INserindo vários locais</h2>
+     <Video width="500" poster="assets/limoes-capa.png" controls>
+        <source src="assets/meu-video.mp4" type="video/mp4">
+       Seu navegador nao suporta videos.
+     </video>
+     <br>
 
 
     <!-- Inserindo vídeos do YouTube -->
-    <!-- src="https://www.youtube.com/embed/eqUFcr1mI3Y" -->
-
+    <iframe width="500" height="315"
+        src="https://www.youtube.com/embed/eqUFcr1mI3Y"
+        frameborder="0"
+        allow="accelerometer; autoplay"
+        allowfullscreen>
+    </iframe>
+    <br>
 
     <!-- Reproduzir áudios  -->
-
+    <audio preload="metadata" autoplay controls>
+        <source src="assets/happy-mistake.mp3" type="audio/mpeg">
+        Seu navegador não suporta aúdio.
+    </audio>
   
 
 </body>
